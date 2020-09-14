@@ -13,6 +13,7 @@ class Song < ApplicationRecord
     song.validates :release_year, numericality: {less_than_or_equal_to: Time.now.year}
   end
 
+
   def song_released?
     released
   end
